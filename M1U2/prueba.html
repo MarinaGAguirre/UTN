@@ -148,82 +148,93 @@
 
 <div class="contacto"></div>
   <h2 id="contacto">Contacto</h2>
-    <form action="" method="">
+  <form action="" method="">
 
-    <p>
-      <label for="nom">Nombre y Apellido</label>
-      <input type="text" name="nombre-apellido" placeholder= "Nombre y Apellido"
-        pattern="^[A-Za-zÑñÁáÉéÍiÓóÚÜü\s]+$" title="Sólo acepta letras y espacios en blanco" required/>
-    </p>
+  <p>
+    <label for="nom">Nombre y Apellido</label>
+    <input type="text" name="nombre-apellido" placeholder="Nombre y Apellido"
+      pattern="^[A-Za-zÑñÁáÉéÍiÓóÚÜü\s]+$" title="Sólo acepta letras y espacios en blanco" required/>
+  </p>
 
-    <p>
-      <label for="email">E-mail</label>
-       <input type="text" name="email" value zise="40px" placeholder= "Email"
-        pattern="^(\w+[/./-]?){1,}@[a-z]+[/.]\w{2,}$" title="Formato de email inválido" required/>
-    </p>
+  <p>
+    <label for="email">E-mail</label>
+    <input type="text" name="email" value zise="40px" placeholder="Email"
+      pattern="^(\w+[/./-]?){1,}@[a-z]+[/.]\w{2,}$" title="Formato de email inválido" required/>
+  </p>
 
-    <p>
-      <label for="tel">Teléfono</label>
-      <input type="tel" name="telefono" placeholder="(Código de área) Número" 
-      pattern="^[0-9]+" title="Sólo acepta números" required/>
-    </p>
+  <p>
+    <label for="tel">Teléfono</label>
+    <input type="tel" name="telefono" placeholder="(Código de área) Número" 
+    pattern="^[0-9]+" title="Sólo acepta números" required/>
+  </p>
+  </form>
 
-    <p>
-      <label><i><b>Soluciones de interes</i></b></label>
-       <ul>
-        <li>
-          <input type="checkbox" name="servicios[]" value="digital_marketing"/>
-            <label for="digital_marketing">Digital Marketing</label>
-          </li>
+<form>
+<br>
+  <p><i><b>Seleccione una franja horaria de contacto</i></b></p>
+    <input type="radio" name="horario" id="radio-uno" value="uno" required>
+    <label for="radio-uno">De 9 a 12 hs</label>
+    <input type="radio" name="horario" id="radio-dos" value="dos">
+    <label for="radio-dos">De 14 a 17 hs</label>
+    <input type="radio" name="horario" id="radio-tres" value="tres">
+    <label for="radio-tres">De 17 a 20 hs</label>
 
-          <li>
-            <input type="checkbox" name="servicios[]" value="digital_ads"/>
-            <label for="digital_ads">Digital Advertising</label>
-          </li>
+  <p><i><b>Seleccione una solución de su interés</i></b></p>
+    <ul>
+     <li>
+       <input type="checkbox" name="servicios[]" value="digital_marketing" checked>
+       <label for="digital_marketing">Digital Marketing</label>
+     </li>
 
-          <li>
-            <input type="checkbox" name="servicios[]" value="business_strategy"/>
-            <label for="business_strategy">Business Strategy</label>
-          </li>
+     <li>
+       <input type="checkbox" name="servicios[]" value="digital_ads"/>
+       <label for="digital_ads">Digital Advertising</label>
+     </li>
+
+     <li>
+       <input type="checkbox" name="servicios[]" value="business_strategy"/>
+       <label for="business_strategy">Business Strategy</label>
+     </li>
           
-          <li>
-            <input type="checkbox" name="servicios[]" value="e-commerce"/>
-            <label for="e-commerce">Ecommerce Website Development</label>
-          </li>
+     <li>
+       <input type="checkbox" name="servicios[]" value="e-commerce"/>
+       <label for="e-commerce">Ecommerce Website Development</label>
+     </li>
 
-          <li>
-            <input type="checkbox" name="servicios[]" value="social_media_strategist"/>
-            <label for="social_media_strategist">Social Media Strategist</label>
-          </li>
+     <li>
+       <input type="checkbox" name="servicios[]" value="social_media_strategist"/>
+       <label for="social_media_strategist">Social Media Strategist</label>
+     </li>
 
-          <li>
-            <input type="checkbox" name="servicios[]" value="responsive_design"/>
-            <label for="responsive_design">Responsive web design</label>
-          </li>
+     <li>
+       <input type="checkbox" name="servicios[]" value="responsive_design"/>
+       <label for="responsive_design">Responsive web design</label>
+     </li>
 
-          <li>
-            <input type="checkbox" name="servicios[]" value="e_business_consulting"/>
-            <label for="e_business_consulting">E-business Consulting </label>
-          </li>
+     <li>
+       <input type="checkbox" name="servicios[]" value="e_business_consulting"/>
+       <label for="e_business_consulting">E-business Consulting </label>
+     </li>
 
-          <li>
-            <input type="checkbox" name="servicios[]" value="full-stack"/>
-            <label for="full-stack">Full-stack developer</label>
-          </li>
+     <li>
+       <input type="checkbox" name="servicios[]" value="full-stack"/>
+       <label for="full-stack">Full-stack developer</label>
+     </li>
+    </ul>
+  </p>
 
-        </ul>
-      </p>
+  <p>
+    <label for="comentarios">Consulta</label> <br/>
+    <textarea name="Comentarios" rows="7" cols="50"></textarea><br>
+    <input type="file" multiple name="files[]"/>
+  </p>
 
-      <p>
-        <label for="comentarios">Consulta</label> <br/>
-        <textarea name="Comentarios" rows="10" cols="50"></textarea><br>
-        <input type="file" multiple name="files[]"/>
-      </p>
-      <p><br>
-        <input type="submit" value="Enviar"/>
-        <input type="reset" value="Borrar"/>
-      </p>
-    </form>
+  <input type="submit" value="Enviar"/>
+  <input type="reset" value="Borrar"/>
+
+</form>
+
+<hr>
 
     <div class="footer"></div>
     <footer>
