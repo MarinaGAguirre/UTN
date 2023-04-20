@@ -1,4 +1,59 @@
+html{
+  scroll-behavior: smooth;  
+}
+
 p{
-    color:red;
-    font-family: 'Courier New', Courier, monospace;
+  color:black;
+  font-family: sans-serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+h1{
+  color:rgb(163, 15, 102);
+  font-family: sans-serif;
+}
+
+h2{
+  color:black;
+  font-family: sans-serif;
+}
+
+h3{
+  color:black;
+  font-family: sans-serif;
+}
+
+
+h4{
+  color:black;
+  font-family: sans-serif;
+}
+
+li{
+  color: black;
+  font-family: Arial;
+}
+
+
+body{
+  margin:0px;
+}
+
+#texto{
+	
+  background:yellow;
+  margin-top:65px;
+}
+
+
+#fijo {
+  position: fixed;
+  top: 0px;
+  background-color: #e7e3e3;
+  height:20px;
+  width: 100%; /* lo damos formas de botonera*/
 }
