@@ -39,8 +39,8 @@
  
 <hr>
 
-<div class="solutions"></div>
-  <h4 id="solutions">SOLUTIONS</h4>
+<div class="servicios"></div>
+  <h4 id="servicios">SERVICIOS</h4>
 <ul>
   <li>Digital Marketing</li>
   <li>Digital Advertising</li>
@@ -152,9 +152,8 @@
 <hr>
 
 <div class="contacto"></div>
-  <h2 id="contacto">Contacto</h2>
+  <h4 id="contacto">CONTACTO</h4>
   <form action="" method="">
-
   <p>
     <label for="nom">Nombre y Apellido</label>
     <input type="text" name="nombre-apellido" placeholder="Nombre y Apellido"
@@ -174,7 +173,7 @@
   </p>
   </form>
 
-<form>
+<form class="form-horario">
 <br>
   <p><i><b>Seleccione una franja horaria de contacto</i></b></p>
     <input type="radio" name="horario" id="radio-uno" value="uno" required>
@@ -183,8 +182,10 @@
     <label for="radio-dos">De 14 a 17 hs</label>
     <input type="radio" name="horario" id="radio-tres" value="tres">
     <label for="radio-tres">De 17 a 20 hs</label>
+</form>
 
-  <p><i><b>Seleccione una solución de su interés</i></b></p>
+<form class="form-servicios">
+  <p><i><b>Seleccione un servicio de su interés</i></b></p>
     <ul>
      <li>
        <input type="checkbox" name="servicios[]" value="digital_marketing" checked>
@@ -227,9 +228,11 @@
      </li>
     </ul>
   </p>
+</form >
 
+<form class="comentarios">
+  <p>CONSULTA<p>
   <p>
-    <label for="comentarios">Consulta</label> <br/>
     <textarea name="Comentarios" rows="7" cols="50"></textarea><br>
     <input type="file" multiple name="files[]"/>
   </p>

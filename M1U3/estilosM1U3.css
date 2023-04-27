@@ -8,9 +8,11 @@ p{
   font-family: sans-serif;
 }
 
-img {
+img{
   max-width: 100%;
   height: auto;
+  display: block;
+  margin: auto;
 }
 
 h1{
@@ -30,8 +32,14 @@ h3{
 
 
 h4{
-  color:black;
+  color: black;
   font-family: sans-serif;
+  background-color: #cecece;
+  border: thin solid rgb(163, 15, 102);
+  border-radius: 10px;
+  padding: 10px;
+  margin: 20px;
+  margin: 20px 10px;
 }
 
 li{
@@ -39,13 +47,11 @@ li{
   font-family: Arial;
 }
 
-
 body{
   margin:0px;
 }
 
-#texto{
-	
+#texto{	
   background:yellow;
   margin-top:65px;
 }
@@ -57,4 +63,35 @@ body{
   background-color: #e7e3e3;
   height:20px;
   width: 100%; /* lo damos formas de botonera*/
+}
+
+#contacto *:required {
+  border-color: blue;
+  border-bottom: 10px;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  padding: 4px 26px 5px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"]{
+	width:180px;
+	padding:10px 10px;
+	border:1px solid #f6f6f6;
+	border-radius:10px;
+	background-color:#f6f6f6;
+	margin:8px 0;
+	display:inline-block;
+}
+
+.comentarios textarea 	{
+  width:320px;
+  padding:10px;
+  border:1px solid #f6f6f6;
+  border-radius:10px;
+  background-color:#f6f6f6;
+  margin:8px 0;
+  display:inline-block;
 }
