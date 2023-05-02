@@ -23,19 +23,24 @@
   <hr>
 
   <body>
-   
-    <header>
+<!-- <header>
       <hgroup>
         <h1 id="inicio">Marina Aguirre
           <img src="imagenes/favicon-icon.png" width="50px" height="50px" alt="favicon-inicio"></h1>
         <h3>Digital Marketing Specialist & Full-Stack Developer</h3>
       </hgroup>
-    </header>
+     </header> -->
+     <header class="header sticky-top">
+      <div>Contenido de la cabecera</div>
+     </header>
+     <h1>Marina Aguirre</h1>
+     <h3>Digital Marketing Specialist & Full-Stack Developer</h3>
+      
     
-  <div class="Imágenes"></div>
+  <div class="imagenes-portada"></div>
     <img src="imagenes/marina-portada.jpg" style="max-width:100%;width:auto;height:auto" alt="portada">
-
-  <p><em>Con casi 2 décadas de experiencia, diseño soluciones para impulsar a las empresas a llegar sus objetivos.</em></p>
+  
+    <p><em>Con casi 2 décadas de experiencia, diseño soluciones para impulsar a las empresas a llegar sus objetivos.</em></p>
  
 <hr>
 
@@ -68,8 +73,8 @@
     </ul>
 
     <ul type="square">
-     <li>Inglés avanzado.</li>
-     <li>Italiano básico.</li>
+     <li>Advanced English.</li>
+     <li>Italiano.</li>
      <li>Negotiation skills.</li>
      <li>Dynamic and proactive personality.</li>
      <li>Project leadership.</li>
@@ -153,25 +158,27 @@
 
 <div class="contacto"></div>
   <h4 id="contacto">CONTACTO</h4>
-  <form action="" method="">
-  <p>
-    <label for="nom">Nombre y Apellido</label>
-    <input type="text" name="nombre-apellido" placeholder="Nombre y Apellido"
+    <form class="contacto-form" action="" method="">
+
+      <label for="nombre">Nombre</label>
+      <input type="text" name="nombre" placeholder="Nombre"
       pattern="^[A-Za-zÑñÁáÉéÍiÓóÚÜü\s]+$" title="Sólo acepta letras y espacios en blanco" required/>
-  </p>
 
-  <p>
-    <label for="email">E-mail</label>
-    <input type="text" name="email" value zise="40px" placeholder="Email"
-      pattern="^(\w+[/./-]?){1,}@[a-z]+[/.]\w{2,}$" title="Formato de email inválido" required/>
-  </p>
+      <label for="apellido">Apellido</label>
+      <input type="text" name="apellido" placeholder="Apellido"
+      pattern="^[A-Za-zÑñÁáÉéÍiÓóÚÜü\s]+$" title="Sólo acepta letras y espacios en blanco" required/>
+  
+      <label for="telefono">Teléfono</label>
+      <input type="tel" name="telefono" placeholder="(Código de área) Número" 
+      pattern="^[0-9]+" title="Sólo acepta números" required/>
 
-  <p>
-    <label for="tel">Teléfono</label>
-    <input type="tel" name="telefono" placeholder="(Código de área) Número" 
-    pattern="^[0-9]+" title="Sólo acepta números" required/>
-  </p>
-  </form>
+      <label for="comentario">Comentario</label>
+      <textarea name="Comentarios" placeholder="Escriba su consulta o comentario en menos de 300 caracteres." maxlength="300" rows="7" cols="45"></textarea>
+      <input type="file" multiple name="files[]"/>
+
+      <input type="submit" name="enviar" value="Enviar datos"/>
+    </form>      
+
 
 <form class="form-horario">
 <br>
@@ -230,17 +237,8 @@
   </p>
 </form >
 
-<form class="comentarios">
-  <p>CONSULTA<p>
-  <p>
-    <textarea name="Comentarios" rows="7" cols="45"></textarea><br>
-    <input type="file" multiple name="files[]"/>
-  </p>
-
   <input type="submit" value="Enviar"/>
   <input type="reset" value="Borrar"/>
-
-</form>
 
 <hr>
 
