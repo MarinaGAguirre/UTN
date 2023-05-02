@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Ejercicio 2:  Programar un contador de caracteres para un textarea. -->
+
+<head>
+  <!--Global Metadata-->
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <title>Contando caracteres en Textarea</title>
+</head>
+
+<body>
+  
+  <form class="contacto-form" action="" method="">
+  <label for="comentarios">Comentarios</label>
+  <textarea name="comentarios" placeholder="Escriba su comentario en 200 caracteres o menos."
+         id="texto" rows="8" cols="45" maxlength="200"></textarea>
+    <div>Caracteres ingresados:<span id="contador"></span> 
+    </div>
+    <br>
+    <input type="submit" name="enviar" value="Enviar datos"/>
+  </form>
+  
+  <style>
+    .contacto-form {
+      width: 360px;
+      padding:15px;
+      border-radius:10px;
+	  margin: 10px;
+	  background-color:#e7e4e4;
+      font-family: sans-serif;
+      font-size: small;
+      font-weight: bold;
+    }
+
+    .contacto-form textarea {
+      background-color: white; 
+      font-size: medium;
+      font-style: oblique; 
+      padding: 10px;
+      border-radius:10px;
+    }
+  </style>
+
+  <script>
+    let texto = document.getElementById('texto');
+    let contador = document.getElementById('contador');
+        
+    texto.addEventListener('keyup', function(){
+      contar.innerText = texto.value.length;
+     }
+    )
+  </script>
+
+</body>
+</html>
