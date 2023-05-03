@@ -55,7 +55,6 @@
   <li>Responsive web design</li>
   <li>E-business consulting</li>
   <li>Full-stack developer</li>
-
 </ul>
 
 <hr>
@@ -172,13 +171,25 @@
       <input type="tel" name="telefono" placeholder="(Código de área) Número" 
       pattern="^[0-9]+" title="Sólo acepta números" required/>
 
-      <label for="comentario">Comentario</label>
-      <textarea name="Comentarios" placeholder="Escriba su consulta o comentario en menos de 300 caracteres." maxlength="300" rows="7" cols="45"></textarea>
+      <label for="Comentarios">Comentarios</label>
+      <textarea name="" placeholder="Escriba su comentario"
+      id="texto" rows="8" cols="45"></textarea>
+        
+      <div>Caracteres ingresados:<span id="contador"></span>
+      </div>
+
+      <script>
+       let texto = document.getElementById('texto');
+       let contador = document.getElementById('contador');
+        
+       texto.addEventListener('keyup', function(){
+        contador.innerText = texto.value.length;
+       })
+     </script>
+
+      <br>
       <input type="file" multiple name="files[]"/>
-
-      <input type="submit" name="enviar" value="Enviar datos"/>
-    </form>      
-
+    </form>  
 
 <form class="form-horario">
 <br>
