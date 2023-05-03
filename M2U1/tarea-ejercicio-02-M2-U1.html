@@ -1,7 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
 
 <!-- Ejercicio 2:  Programar un contador de caracteres para un textarea. -->
+
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
   <!--Global Metadata-->
@@ -11,48 +12,43 @@
   <title>Contando caracteres en Textarea</title>
 </head>
 
-<body>
-  
+ <body>
   <form class="contacto-form" action="" method="">
-  <label for="comentarios">Comentarios</label>
-  <textarea name="comentarios" placeholder="Escriba su comentario en 200 caracteres o menos."
-         id="texto" rows="8" cols="45" maxlength="200"></textarea>
-    <div>Caracteres ingresados:<span id="contador"></span> 
-    </div>
+    <label for="comentarios">Comentarios</label>
+    <textarea name="" placeholder="Escriba su comentario"
+          id="texto" cols="30" rows="10"></textarea>
     <br>
-    <input type="submit" name="enviar" value="Enviar datos"/>
-  </form>
-  
-  <style>
-    .contacto-form {
-      width: 360px;
-      padding:15px;
-      border-radius:10px;
-	  margin: 10px;
-	  background-color:#e7e4e4;
-      font-family: sans-serif;
-      font-size: small;
-      font-weight: bold;
-    }
+    <div>Caracteres ingresados: <span id="contador"></span></div>
 
-    .contacto-form textarea {
-      background-color: white; 
-      font-size: medium;
-      font-style: oblique; 
-      padding: 10px;
-      border-radius:10px;
-    }
-  </style>
-
-  <script>
-    let texto = document.getElementById('texto');
-    let contador = document.getElementById('contador');
+     <script>
+       let texto = document.getElementById('texto');
+       let contador = document.getElementById('contador');
         
-    texto.addEventListener('keyup', function(){
-      contar.innerText = texto.value.length;
-     }
-    )
-  </script>
+       texto.addEventListener('keyup', function(){
+        contador.innerText = texto.value.length;
+       })
+     </script>
+   </form> 
+   
+   <style>
+     .contacto-form {
+       width: 300px;
+       padding:15px;
+       border-radius:10px;
+	     margin: 15px;
+	     background-color:#e7e4e4;
+       font-family: sans-serif;
+       font-size: small;
+       font-weight: bold;
+      }
 
-</body>
+     .contacto-form textarea {
+       background-color: white; 
+       font-size: medium;
+       font-style: oblique; 
+       padding: 10px;
+       border-radius:10px;
+     }
+   </style>
+ </body>
 </html>
