@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Marina Aguirre - Marketing + Web development</title>
+    <meta name="description" content="Digital Marketing | E-commerce Specialist | Social Media Strategist | Google Advertising Professional | Full-stack developer."/>
+<!-- Cdn de BootStrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+<!-- Google Fonts | Raleway -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,400;0,700;1,200;1,300;1,400;1,700&display=swap" rel="stylesheet">
+
+<!-- Stylesheet propia almacenada en Visual Studio -->    
+    <link rel="stylesheet" href="css-bootstrap.css/style-bootstrap.css">
+    <link rel="icon" href="img/favicom-ligth.png">
+  </head>
+  
+<body>
+<!-- En la class de la "Barra de navegación" (navbar) se expande desde el tamaño medium (md) de media query estipulado por Bootstrap,
+     se aplican los estilos pre-configurados de Bootstrap "navbar-dark", y
+     el background (bg) color es el dark que indicamos en la style-bootstrap.css -->  
+  <nav class="navbar sticky-top navbar-expand-md navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="index-bootstrap.html"><img src="img/logo-marina-dark2.png" alt="Marina Aguirre - Marketing + Web development"></a>
+        <button 
+          class="navbar-toggler" 
+          type="button" 
+          data-bs-toggle="collapse" 
+          data-bs-target="#navbarNavDropdown" 
+          aria-controls="navbarNavDropdown" 
+          aria-expanded="false" 
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+<!-- En la ul class de abajo: para colocar en el margen derecho los botones del navbar, 
+     le damos un espacio en el margen-start(ms), desde el tamaño de la "media query large" (lg) -->
+          <ul class="navbar-nav ms-lg-auto">
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="index-bootstrap.html">Inicio</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Services</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="services.html#digital-marketing">Digital Marketing</a></li>
+                  <li><a class="dropdown-item" href="services.html#social-media">Social Media</a></li>
+                  <li><a class="dropdown-item" href="services.html#e-commerce">E-commerce</a></li>
+                  <li><a class="dropdown-item" href="services.html#web-development">Web development</i></a></li>
+                </ul> 
+              </li>  
+              <li class="nav-item"><a class="nav-link" href="specialties.html">Specialties</a></li>
+              <li class="nav-item"><a class="nav-link" href="comencemos.html">Let's starts</a></li>
+              <li class="nav-item"><a class="nav-link" href="contact.html">Get in touch</a></li>
+            </ul>
+        </div>
+     </div>
+  </nav>
+
+<!--Sección "Spacing" de BootStrap, propiedades Margin (m) y padding (p). Los lados se definien con (t) top, (b) bottom, (s) start, (e) end, 
+(x) (y) setea espacio en el lado derecho o izq. En este caso decimos pt (padding top) 5 (que es el número más grande).
+- En la Fila (class="row align-items-lg-center") alineo los textos con ambas imagenes
+- En Bootstrap fs-5 es (font-sizes). 
+- Hay ESTILOS para los Botton con la propiedad class="btn" y para enlaces, para las "call to action". El tamaño del botón
+  con: btn-lg (botón large) y lo redondeamos con rounded-5 (en las 4 esquinas iguales)
+- Para que la imágen sea responsiva, Bootstrap tiene img-fluid (aplica max-width: 100% y height: auto)
+- Para dar "ESTILOS" en Bootstrap en el texto en línea tenemos <em> que lo muestra en CURSIVA y <strong> en negritas.
+- En la <p> (párrafo) la class "lead" de Bootstrap hace que el "texto se destaque". 
+- Para dar ORDEN a los elementos, empleo la función ORDER de Bootstrap que va del 0 al 5.
+- Y digo, en el tamaño lg (large) lo ubique en el orden 1
+- En Bootstrap para setear que un elemento alcance el 100% máxima altura, colocamos: min-vh-100
+- ".mb-3" es "margin bottom" = un espacio en el margen de arriba.
+- Styles a las Cards: La Clase ".mb-3" es "margin bottom" = un espacio en el margen de arriba.
+- Styles a las Cards: La clase "".mx-auto" para centrar horizontalmente la imágen de forma automática.
+- Style a las Cars: A las columnas la convertimos en Contenedores flex con la clase: ".d-flex"-->
+
+  <main class="main pt-3 bg-gradient-gray-white">
+    <div class="container">
+      <section class="row align-items-md-center mb-5">
+        <article class="col-12 col-lg-5">
+          <h2>Do you need a marketing strategy?</h2>
+          <p class="fs-5"> Get more traffic. Acquire more customers. Grow yours Sales in 2023. We work for businesses of all sizes.
+          </p>
+          <a class="btn btn-primary btn-lg rounded-5" href="services.html" role="button">Let's start now!  
+          </a>
+        </article>
+
+        <article class="col-12 col-lg-7">    
+          <img class="img-fluid" src="img/header-mkt.png" width="90%" alt="Do you need an effective digital marketing strategy?"/>
+        </article>
+
+        <article class="col-12 col-lg-5 order-lg-1">
+          <h2>Mobile-Friendly Websites</h2>
+          <p class="lead">Online presence involves creating a website whith: <em> Readability, Usability, Speed, 
+          Responsive design, Clear Call-to-Action, Simple mobile-Navigation, and Usable Forms </em>to makes the sales process easy.
+          </p>
+        </article>
+
+        <article class="col-12 col-lg-7">
+          <img class="img-fluid" src="img/header-image-2.png" width="80%" alt="Mobile-Friendly Websites"/>
+        </article>
+      </section>
+
+      <section id="servicios" class="row align-items-md-center min-vh-100">
+
+        <article class="col-12 col-md-6 col-lg-3 d-flex">
+          <div class="card mx-auto mb-3" style="width: 18rem;">
+            <img src="img/icon.marketing.png" class="card-img-top bg--second-color" alt="Digital Marketing">
+            <div class="card-body">
+              <h5 class="card-title">Digital Marketing</h5>
+              <p class="card-text">Combining data & business intelligence to reach the right audience for each goal.</p>
+              <a href="services.html" class="btn btn-primary rounded-5">Learn more...<i class="bi bi-chevron-double-right"></i>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="col-12 col-md-6 col-lg-3 d-flex">
+          <div class="card mx-auto" style="width: 18rem;">
+            <img src="img/icon-social-estrategist.png" class="card-img-top bg--second-color" alt="Social Media">
+            <div class="card-body">
+              <h5 class="card-title">Social media strategy</h5>
+              <p class="card-text">15+ years of experience improving effective customer engagement strategies.</p>
+              <a href="services.html" class="btn btn-primary rounded-5">Learn more...<i class="bi bi-chevron-double-right"></i></a>
+            </div>
+          </div>
+          </article>
+       
+        <article class="col-12 col-md-6 col-lg-3 d-flex">
+          <div class="card mx-auto" style="width: 18rem;">
+            <img src="img/icon-e-commerce.png" class="card-img-top bg--second-color" alt="E-commerce">
+            <div class="card-body">
+              <h5 class="card-title">E-commerce</h5>
+              <p class="card-text">20+ years of experience at the eCommerce wold delivering results for clients.</p>
+              <a href="services.html" class="btn btn-primary rounded-5">Learn more...<i class="bi bi-chevron-double-right"></i></a>
+            </div>
+          </div>
+          </article>
+
+        <article class="col-12 col-md-6 col-lg-3 d-flex">
+          <div class="card mx-auto" style="width: 18rem;">
+            <img src="img/icon-web-development.png" class="card-img-top bg--second-color" alt="Web Development">
+            <div class="card-body">
+              <h5 class="card-title">Web Development</h5>
+              <p class="card-text">We offer the finest tailor website design to your specific business goals.</p>
+              <a href="services.html" class="btn btn-primary rounded-5">Learn more...<i class="bi bi-chevron-double-right"></i></a>
+            </div>
+          </div>
+        </article>
+
+      </section>
+
+    </div> 
+  </main>
+
+  <footer class="bg-dark p-3">
+    <div class="container text-center">
+    <nav class="d-flex justify-content-end">
+      <a href="https://www.facebook.com/Marina.Guadalupe.Aguirre" target="_blank" rel="noopener noreferrer"><i class="bi bi-facebook fs-3"></i></a> <!--f3 es font size tamaño 3.-->
+      <a href="https://www.instagram.com/marina_aguirre_007/" target="_blank" rel="noopener noreferrer"><i class="bi bi-instagram fs-3"></i></a>
+      <a href="https://www.linkedin.com/in/marina-aguirre-3652a410/?" target="_blank" rel="noopener noreferrer"><i class="bi bi-linkedin fs-3"></i></a>
+      <a href="https://api.whatsapp.com/send?phone=543512463603" target="_blank" rel="noopener noreferrer"><i class="bi bi-whatsapp fs-3"></i></a> 
+    </nav>
+    <small class="text-white"> &COPY; Copyright 2023 Marina Aguirre  |  Derechos reservados   |  Política de privacidad   |   Política de cookies</small>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+  <script src="javascript.js/main-bootstrap.js"></script>
+</body>
+</html>
