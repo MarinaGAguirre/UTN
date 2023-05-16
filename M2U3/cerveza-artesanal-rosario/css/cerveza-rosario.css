@@ -1,0 +1,76 @@
+/*  **********  Bootstrap Styles  **********  */
+
+.bg-dark {
+    background-color: rgb(44, 44, 44) !important;
+ }
+
+
+.bg-gradient-gray-white {
+  background-color:  rgb(219, 214, 214);
+  background-image: linear-gradient(
+   135deg,
+   rgba(248, 240, 253, 0.75),
+   rgb(255,255,255)
+  );
+}
+
+.footer {
+    background-color: #aaa;
+}
+
+h1, h2 {
+  font-family: 'Alfa Slab One', cursive; 
+}
+
+/*  **********  My Styles  **********  */
+
+/* La clase: vh (viewport height) cuyo valor va de 1 a 100, representa un 
+   porcentaje de la altura del área visible del navegador*/
+
+.hero {
+  background: url(../img/header-3.jpg) no-repeat;
+  background-size: cover;
+  height: 50vh;
+  min-height: 600px;
+  color: rgb(44,44,44);
+}
+
+.lista-novedades {
+  background-color: #ffff;
+  font-family: 'Alfa Slab One', cursive;
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #a0a0a0;
+  transition: all .2s ease-in-out;
+  display: block;
+}
+
+.lista-novedades li a:hover {
+  color: #212529;
+  background-color: #dadada;
+}
+
+.lista-novedades li a img {
+  width: 120px;
+  height: 50px;
+  filter: grayscale();
+  transition: all .2s ease-in-out;
+  margin-right: 1rem;
+  opacity: 0.7;
+}
+
+.lista-novedades li a:hover img {
+  filter: none;
+  margin-right: 1.4rem;
+  opacity: 1;
+}
+
+.testimonios {
+  background-color: #dadada;
+  padding-bottom: 4rem !important;
+}
+
+.testimonio {
+  text-align: center;
+  padding: 50px 20px;  
+}
