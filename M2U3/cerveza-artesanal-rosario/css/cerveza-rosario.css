@@ -25,7 +25,10 @@ h1, h2 {
 /*  **********  My Styles  **********  */
 
 /* La clase: vh (viewport height) cuyo valor va de 1 a 100, representa un 
-   porcentaje de la altura del área visible del navegador*/
+   porcentaje de la altura del área visible del navegador
+
+Font family: Alfa Slab One y Open Sans de Google fonts.
+ */
 
 .hero {
   background: url(../img/header-3.jpg) no-repeat;
