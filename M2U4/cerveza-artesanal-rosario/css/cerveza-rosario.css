@@ -1,0 +1,132 @@
+/*  **********  Bootstrap Styles  **********  */
+
+.bg-dark {
+    background-color: rgb(44, 44, 44) !important;
+ }
+
+
+.bg-gradient-gray-white {
+  background-color:  rgb(219, 214, 214);
+  background-image: linear-gradient(
+   135deg,
+   rgba(248, 240, 253, 0.75),
+   rgb(255,255,255)
+  );
+}
+
+.btn-primary {
+  background-color: #444444;
+  border-color: #444444;
+  border-radius:12px;
+  --bs-btn-hover-bg: rgb(15, 238, 71);
+  --bs-btn-hover-border-color:  rgb(15, 238, 71);
+  --bs-btn-hover-color: var(--white-color);
+  --bs-btn-active-bg:  rgb(15, 238, 71);
+  --bs-btn-active-border-color:  rgb(15, 238, 71);
+  --bs-btn-font-size: 0.75rem;
+}
+
+
+.footer {
+    background-color: #aaa;
+}
+
+h1,
+h2 {
+  font-family: 'Alfa Slab One', cursive; 
+}
+
+/*  **********  My Styles  **********  */
+
+/* La clase: vh (viewport height) cuyo valor va de 1 a 100, representa un 
+   porcentaje de la altura del área visible del navegador
+
+font-family: "Alfa Slab One" de Google fonts.
+font-family: "Open Sans" de Google fonts.
+ */
+
+.form-control {
+  border-radius: 12px;
+  font-size: 0.85rem;
+  background-color: #dadada;
+}
+
+.hero {
+  background: url(../img/header.jpg) no-repeat;
+  background-size: cover;
+  height: 100vh;
+  min-height: 600px;
+  color: white;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.lista-venta {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.lista-venta {
+  margin: 4px 0;
+}
+
+.lista-venta {
+  background-color: #ffff;
+  font-family: 'Alfa Slab One', cursive;
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #a0a0a0;
+  transition: all .2s ease-in-out;
+  display: block;
+}
+
+.lista-venta li a:hover {
+  color: #212529;
+  background-color: #dadada;
+}
+
+.lista-venta li a img {
+  width: 120px;
+  height: 50px;
+  filter: grayscale();
+  transition: all .2s ease-in-out;
+  margin-right: 1rem;
+  opacity: 0.7;
+}
+
+.lista-venta li a:hover img {
+  filter: none;
+  margin-right: 1.4rem;
+  opacity: 1;
+}
+
+/* El aspect-ratio: Relación de aspecto.
+Es la proporción que tiene una imagen 
+entre su ancho y su alto.*/
+.mapa iframe {
+  width: 100%;
+  aspect-ratio: 1.2;
+}
+
+.testimonios {
+  background-color: #444444;
+  padding-bottom: 4rem !important;
+  color: white; 
+}
+
+.scroll_section {
+  scroll-margin-top: 60px;
+}
+
+.staff {
+  background: #efefef;
+}
+
+
+.testimonio {
+  text-align: center;
+  padding: 50px 20px;  
+}
