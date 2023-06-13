@@ -1,0 +1,43 @@
+<div class="col-lg-4 offset-lg-2">
+  <h3>Let us know your requirements!</h3><br>
+  <p>We'll get back to you as soon as possible.</p>
+</div>
+
+<div class="container mb-4 pt-4"> <!--Creamos un Container porque colocaremos adentro 2 ARTICLES -->
+    <section class="row"> <!--Ceamos un row con 3 columnas, 1 ocupará 12. Y 2 ocuparán 6 lugares del ancho.-->
+        
+        <article class="col-12 text-center"> <!-- 1 columna que ocupará 12 lugares.-->
+          <h5>Or you can write to <a href="mailto:info@mga.com">info@mga.com</a></h5>
+        </article>
+        
+         <!-- 1 Col ocupará 6 lugares del lado derecho -->
+        <article class="col-12 col-lg-6 order-lg-1">  <!-- INICIO FORMULARIO GET IN TOUCH -->
+          <form action="https://formsubmit.co/maguirre.neticel@gmail.com" method="POST">
+            <label class="form-label" for="name"></label>
+              <input class="form-control" id="name" name="name" 
+                placeholder="Name" type="text" required/>           
+                     
+            <label class="form-label" for="email"></label>
+              <input class="form-control" id="emailk" name="email" 
+                placeholder="E-mail" type="email" required/>    
+
+            <label class="form-label" for="comments"></label>
+              <textarea class="form-control" id="comments" name="comments" 
+                placeholder="Project details"
+                cols="30" rows="4" required></textarea>       
+            <br>
+            
+            <input class="btn btn-primary btn-md" type="submit" name="Submit"  value="Send" id="sumit"/>
+            
+            <input type="hidden"
+                   name="_next" 
+                   value="https://127.0.0.1:5500/thanks.html"/>
+
+            <input type="hidden" 
+                   name="_subject"
+                   value="comentario!">
+
+          </form>
+        </article> <!-- FIN FORMULARIO GET IN TOUCH -->
+    </section>
+</div>
