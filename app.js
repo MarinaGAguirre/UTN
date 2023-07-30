@@ -7,7 +7,7 @@ var logger = require("morgan");
 //Indicamos que este proyecto trabaja con variables de entonrno:
 require("dotenv").config(); //traigo la configuración de dotenv
 var session = require("express-session");
-/*var pool = require("./models/bd"); //traigo el archivo de base de datos */
+/*var pool = require("./models/bd"); //traigo el archivo de base de datos*/
 
 var indexRouter = require("./routes/index");
 var usersRouter = require("./routes/users");
