@@ -1,0 +1,23 @@
+<body>
+  <section class="login-hero">
+    <div class="formulario">
+      <form class="login-form" action="/admin/login" method="post">
+        <h3>¡Hola! Por favor login.</h3>
+
+        <div class="input-box">
+          <input type="text" id="usuario" name="usuario" placeholder="Usuario" required/> <label>Usuario</label>
+        </div>
+
+        <div class="input-box">
+          <input type="password" id="password" name="password" placeholder="Password" required/> <label>Clave</label>
+        </div>
+
+        <button type="submit" class="btn btn-danger btn-md" name="submit">LOGIN</button>
+
+      </form>
+      {{#if error}}
+        <p>El usuario o contraseña ingresados no es correcto.</p>
+      {{/if}}
+    </div>
+  </section>
+</body>

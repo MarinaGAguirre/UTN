@@ -1,0 +1,251 @@
+/*  **********  Bootstrap Styles  **********  */
+
+.bg-dark {
+  background-color: rgb(44, 44, 44) !important;
+}
+
+.bg-gradient-gray-white {
+background-color:  rgb(219, 214, 214);
+background-image: linear-gradient(
+ 135deg,
+ rgba(248, 240, 253, 0.75),
+ rgb(255,255,255)
+);
+}
+
+.btn-primary {
+background-color: #444444;
+border-color: #444444;
+border-radius:12px;
+--bs-btn-hover-bg: rgb(232, 182, 87);
+--bs-btn-hover-border-color:  rgb(232, 182, 87);
+--bs-btn-hover-color: var(--white-color);
+--bs-btn-active-bg:  rgb(15, 238, 71);
+--bs-btn-active-border-color:  rgb(15, 238, 71);
+--bs-btn-font-size: 0.75rem;
+}
+
+.btn-success {
+  background-color: rgb(232, 182, 87);
+  border-color: rgb(232, 182, 87);
+  color: black;
+  border-radius: 12px;
+  --bs-btn-hover-bg:  rgb(15, 238, 71);
+  --bs-btn-hover-border-color:  rgb(15, 238, 71);
+  --bs-btn-hover-color: var(--white-color);
+  --bs-btn-active-bg:  rgb(15, 238, 71);
+  --bs-btn-active-border-color:  rgb(15, 238, 71);
+  --bs-btn-font-size: 0.75rem;
+  }
+  
+
+.carousel-caption {
+position: absolute;
+right: 15%;
+top: 200px;
+left: 10%;
+z-index: 10;
+padding-top: 20px;
+padding-bottom: 20px;
+color: #fff;
+text-align: start;
+background-color: none;
+}
+
+.footer {
+  background-color: #aaa;
+}
+
+h1,
+h2 {
+font-family: sans-serif,
+}
+
+/*  **********  My Styles  **********  */
+
+/* La clase: vh (viewport height) cuyo valor va de 1 a 100, representa un 
+ porcentaje de la altura del área visible del navegador
+
+font-family: "Alfa Slab One" de Google fonts.
+font-family: "Open Sans" de Google fonts.
+*/
+
+.error404 {
+  background: url(../images/error404.png);
+  background-repeat: no-repeat;
+  background-size: cover; 
+  color: var(--text-color);
+  height: 0.5vh;
+  min-height: 500px;
+  background-position: center;
+  color: white;
+}
+
+.gracias {
+background: url(./../images/gracias.png);
+background-repeat: no-repeat;
+background-size: cover; 
+color: var(--text-color);
+height: 0.5vh;
+min-height: 500px;
+background-position: center;
+color: white;
+}
+
+.form-control {
+border-radius: 12px;
+font-size: 0.85rem;
+background-color: #dadada;
+}
+
+html {
+scroll-behavior: smooth;
+}
+
+.lista-venta {
+margin: 0;
+padding: 0;
+list-style: none;
+}
+
+.lista-venta {
+margin: 4px 0;
+}
+
+.lista-venta {
+background-color: #ffff;
+font-family: sans-serif, cursive;
+text-decoration: none;
+font-size: 1.2rem;
+color: #a0a0a0;
+transition: all .2s ease-in-out;
+display: block;
+}
+
+.lista-venta li a:hover {
+color: #212529;
+background-color: #dadada;
+}
+
+.lista-venta li a img {
+width: 120px;
+height: 50px;
+filter: grayscale();
+transition: all .2s ease-in-out;
+margin-right: 1rem;
+opacity: 0.7;
+}
+
+.lista-venta li a:hover img {
+filter: none;
+margin-right: 1.4rem;
+opacity: 1;
+}
+
+
+/* **** INICIO LOGIN FORM **** */
+
+.formulario {
+  /*background-color: var (-- grayLigth-color);*/
+  background: transparent;
+  margin: auto;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  /*border-radius: 10px;*/
+  /*padding: 30px 40px;*/
+}
+
+.formulario .btn-danger  {
+  width: 100%;
+  border-radius: 12px;
+  margin-top: 10px;
+  --bs-btn-hover-bg: rgb(15, 238, 71);
+  --bs-btn-hover-border-color: rgb(15, 238, 71);
+  --bs-btn-hover-color: var(--white-color);
+  --bs-btn-active-bg:  rgb(15, 238, 71);
+  --bs-btn-active-border-color:  rgb(15, 238, 71);
+  --bs-btn-active-color: var(--white-color);
+  --bs-btn-font-size: 0.75rem;
+}
+
+.formulario h3 {
+  font-size: 25px;
+  text-align: center;
+  color: black;
+}
+
+.input-box {
+  width: 100%;
+  height: 50px;
+  background: transparent;
+  margin: 10px 0;
+}
+
+.login-hero {
+  background: url(../images/login-hero2.png);
+  background-position: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  min-height: 400px;
+  background-position: center;
+}
+
+.login-form {
+	width: 40%;
+	padding: 20px;
+	border-radius:20px;
+  /*border: 1px solid rgb(219, 214, 214);*/
+	margin: 10px;
+  font-size: 1rem;
+  background-position: center;
+  margin-top: 0;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"]{
+  width: 100%;
+	padding: 6px 5px;
+	border: 25px rgb(219, 214, 214);
+	border-radius: 12px;
+	background-color: transparent;
+	margin-top: 10px;
+	display:inline-block;
+}
+
+/* **** FIN LOGIN FORM **** */
+
+
+/* El aspect-ratio: Relación de aspecto.
+Es la proporción que tiene una imagen 
+entre su ancho y su alto.*/
+.mapa iframe {
+width: 100%;
+aspect-ratio: 1.2;
+}
+
+.scroll_section {
+scroll-margin-top: 60px;
+scroll-behavior: smooth;
+scroll
+}
+
+.servicios {
+background: #efefef;
+}
+
+.testimonio {
+text-align: center;
+padding: 20px 30px;
+}
+
+.testimonios {
+  background-color: #444444;
+  padding-bottom: 1.5rem !important;
+  color: white; 
+  }
+
