@@ -1,0 +1,59 @@
+<article class="bg-gradient-gray-white" bt-0>
+
+  <div class="container scroll_section" style="margin 50px auto">
+
+    <div class="row">
+      {{! INICIO FILA 1 }}
+      <div class="col">
+        <p class="text-end">
+          <span>Hola {{usuario}}!</span>
+          <a href="/admin/login/" class="btn btn-danger">CERRAR<i
+              class="fas fa-sign-out-alt"
+            ></i></a>
+        </p>
+      </div>
+    </div>
+    {{! FIN FILA 1 }}
+    {{! INICIO FILA 2 }}
+    <div class="row">
+      <div class="col-7" style="margin-top: -7px">
+        <h4>NOVEDADES - Distribuidores</h4>
+      </div>
+      <div class="col-5 text-end">
+        <a href="" class="btn btn-success mb-3"><i class="fas fa-plus"></i>NUEVO
+          +</a>
+      </div>
+    </div>
+    {{! FIN FILA 2 }}
+    {{! INICIO FILA 3 }}
+    <div class="row">
+      <div class="col">
+        <table class="table">
+
+          <thead>
+            <tr class="table-dark">
+              <th scope="col">#</th>
+              <th scope="col">Nombre de fantasía</th>
+              <th scope="col" class="text-center">Acciones</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            {{#each novedades}}
+              <tr>
+                <th scope="row">{{id}}</th>
+                <td>{{Nombre}}</td>
+                <td class="text-right">
+                  <a href=" " class="btn btn-secondary"><i class="fa-solid fa-pen"></i></a>
+                  <a href="/admin/novedades/eliminar/{{id}}" class="btn btn-secondary"><i class="fa fa-trash"></i></a>
+                </td>
+              </tr>
+            {{/each}}
+          </tbody>
+
+        </table>
+      </div>
+    </div>
+    {{! FIN FILA 3 }}
+  </div>
+</article>

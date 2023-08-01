@@ -12,7 +12,7 @@ var session = require("express-session");
 var indexRouter = require("./routes/index");
 var usersRouter = require("./routes/users");
 var loginRouter = require("./routes/admin/login");
-var adminVentasRouter = require("./routes/admin/ventas");
+var adminNovedadesRouter = require("./routes/admin/novedades");
 
 var app = express();
 
@@ -50,7 +50,7 @@ secured = async (req, res, next) => {
 app.use("/", indexRouter);
 app.use("/users", usersRouter);
 app.use("/admin/login", loginRouter);
-app.use("/admin/ventas", secured, adminVentasRouter);
+app.use("/admin/novedades", secured, adminNovedadesRouter);
 
 //Armamos las RUTAS - Select:
 /*pool.query('select * from usuarios'). then(function (resultados) {

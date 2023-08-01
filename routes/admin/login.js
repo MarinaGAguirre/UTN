@@ -29,7 +29,7 @@ router.post("/", async (req, res, next) => {
       req.session.id_usuario = data.id; //id > nombre de la columna del formulario en MySQL.
       req.session.nombre = data.usuario; //usuario > nombre de la columna del formulario en MySQL.
 
-      res.redirect("/admin/ventas");
+      res.redirect("/admin/novedades");
     } else {
       res.render("admin/login", {
         layout: "admin/layout",
