@@ -1,0 +1,34 @@
+<!-- Inicio Novedades modificar -->
+<article class="bg-gradient-gray-white" bt-0>
+  <section class="container novedades-modificar" style="margin 100px auto">
+    <div class="row">
+      <div class="col-6 offset-3">
+        <br />
+        <h3>Mmodificar novedades</h3>
+        <form action="/admin/novedades/modificar" method="post">
+          <input type="hidden" value="{{novedad.id}}" name="id" />
+          <div class="form-group">
+            <input type="text" placeholder="Nombre del comercio"
+              value="{{novedad.nombre}}" class="form-control" name="nombre"/>
+          </div>
+          <br />
+          <div class="form-group">
+            <textarea placeholder="Direccion y teléfono" class="form-control"
+              name="direccion">{{novedad.direccion}}</textarea>
+          </div>
+          <br />
+          <div class="form-group">
+            <textarea placeholder="Detalles" class="form-control"
+              name="detalles">{{novedad.detalles}}</textarea>
+          </div>
+          <br />
+          <button type="submit" class="btn btn-lg btn-primary">MODIFICAR</button>
+        </form>
+        {{#if error}}
+        <h5>{{message}}</h5>
+        {{/if}}
+      </div>
+    </div>
+  </section>
+</article>
+<!-- FIN Novedades modificar -->

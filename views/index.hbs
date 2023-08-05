@@ -176,7 +176,7 @@
       <ul class="lista-novedades">
         {{#each novedades}}
         <li><a href="#" data-bs-toggle="modal" data-bs-target="#modal{{id}}">
-            <img src="images/venta.png"/>{{Nombre}}</a>
+            <img src="images/venta.png"/>{{nombre}}</a>
         </li>
         {{/each}}
       </ul>
@@ -192,15 +192,15 @@
         <div class="modal-content">
           <!--INICIO div modal content-->
           <div class="modal-header">
-            <h4 class="modal-title" id="exampleModalLabel">{{ Nombre }}</h4>
+            <h4 class="modal-title" id="exampleModalLabel">{{ nombre }}</h4>
             <button type="button" class="btn-close" 
             data-bs-dismiss="modal" aria-label="Close">
             </button>
           </div>
 
           <div class="modal-body">
-            <h5>{{ Dirección }}</h5>
-            <p>{{ Detalles }}</p>
+            <h5>{{ direccion }}</h5>
+            <p>{{ detalles }}</p>
           </div>
 
         </div>  <!--FIN div modal content-->
@@ -411,8 +411,8 @@
     </div>
     <!--Fin div CONOCENOS -->
 
+    <!-- Inicio div CONTACTO -->
     <div class="col-md-4 mt-4 mt-sm-0">
-      <!-- Inicio div CONTACTO -->
       <h3>Contactanos</h3>
       <form class="row g-2" action="/" method="post">
 

@@ -46,6 +46,14 @@ border-radius:12px;
   --bs-btn-font-size: 1rem;
   }
 
+  .btn-escribir {
+    background-color:  rgb(15, 238, 71);
+    border-color:  rgb(15, 238, 71);
+    border-radius: 12px;
+    --bs-btn-hover-bg: rgb(232, 182, 87);
+    --bs-btn-hover-border-color:  rgb(232, 182, 87);
+  }
+
 .carousel-caption {
 position: absolute;
 right: 15%;
@@ -225,6 +233,7 @@ opacity: 1;
 }
 
 /* **** FIN LOGIN FORM **** */
+
 
 
 /* El aspect-ratio: Relación de aspecto.

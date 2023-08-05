@@ -1,0 +1,36 @@
+<!-- Inicio Novedades agregar -->
+<article class="bg-gradient-gray-white" bt-0>
+  <section class="container novedades-agregar" style="margin 100px auto">
+    <div class="row">
+      <div class="col-6 offset-3">
+        <br />
+        <h3>Agregar novedades</h3>
+        <form action="/admin/novedades/agregar" method="post">
+          <div class="form-group">
+            <input
+              type="text" class="form-control"
+              name="nombre" placeholder="Nombre del comercio"/>
+          </div>
+          <br />
+          <div class="form-group">
+            <textarea
+              type="text" class="form-control"
+              name="direccion" placeholder="Direccion y teléfono"></textarea>
+          </div>
+          <br />
+          <div class="form-group">
+            <textarea  type="text" class="form-control"
+              name="detalles" placeholder="Detalles"></textarea>
+          </div>
+          <br />
+          <button type="submit" class="btn btn-lg btn-primary">GUARDAR</button>
+        </form>
+        <br>
+        {{#if error}}
+          <h5>{{message}}</h5>
+        {{/if}}
+      </div>
+    </div>
+  </section>
+</article>
+<!-- FIN Novedades agregar -->
