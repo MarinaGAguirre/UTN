@@ -5,27 +5,53 @@
       <div class="col-6 offset-3">
         <br />
         <h3>Agregar novedades</h3>
-        <form action="/admin/novedades/agregar" method="post">
+        <form
+          action="/admin/novedades/agregar"
+          method="post"
+          enctype="multipart/form-data"
+        >
           <div class="form-group">
             <input
-              type="text" class="form-control"
-              name="nombre" placeholder="Nombre del comercio"/>
+              type="text"
+              class="form-control"
+              name="nombre"
+              placeholder="Nombre del comercio"
+            />
           </div>
           <br />
           <div class="form-group">
             <textarea
-              type="text" class="form-control"
-              name="direccion" placeholder="Direccion y teléfono"></textarea>
+              type="text"
+              class="form-control"
+              name="direccion"
+              placeholder="Dirección y teléfono"
+            ></textarea>
           </div>
           <br />
           <div class="form-group">
-            <textarea  type="text" class="form-control"
-              name="detalles" placeholder="Detalles"></textarea>
+            <textarea
+              type="text"
+              class="form-control"
+              name="detalles"
+              placeholder="Detalles"
+            ></textarea>
           </div>
           <br />
+
+          <div class="form-group">
+            <label>Imagen:
+              <input
+                type="file"
+                class="form-control"
+                name="imagen"
+                id="imagen"
+              /></label>
+          </div>
+          <br />
+
           <button type="submit" class="btn btn-lg btn-primary">GUARDAR</button>
         </form>
-        <br>
+        <br />
         {{#if error}}
           <h5>{{message}}</h5>
         {{/if}}
