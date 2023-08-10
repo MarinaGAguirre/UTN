@@ -8,7 +8,7 @@ var cloudinary = require("cloudinary").v2;
 router.get("/", async function (req, res, next) {
   novedades = await novedadesModel.getNovedades();
   novedades = novedades.splice(0,5); //Selecciona los primeros 5 elementos del array.
-  novedades = novedades.map((novedad) => {
+  novedades = novedades.map(novedad => {
     if (novedad.img_id) {
       const imagen = cloudinary.url(novedad.img_id, {
         width: 320,
@@ -16,18 +16,18 @@ router.get("/", async function (req, res, next) {
       });
       return {
         ...novedad,
-        imagen,
+        imagen
       };
     } else {
       return {
         ...novedad,
-        imagen: "/images/noimage.jpg",
-      };
+        imagen: "/images/noimage.jpg"
+      }
     }
   });
 
   res.render("index", {
-    novedades,
+    novedades
   });
 });
 

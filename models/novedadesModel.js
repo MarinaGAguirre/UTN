@@ -48,5 +48,5 @@ module.exports = {
   deleteNovedadById,
   insertNovedad,
   getNovedadById,
-  modificarNovedadById
+  modificarNovedadById,
 };

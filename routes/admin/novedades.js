@@ -11,29 +11,29 @@ const destroy = util.promisify(cloudinary.uploader.destroy);
 router.get("/", async function (req, res, next) {
   var novedades = await novedadesModel.getNovedades();
 
-  novedades = novedades.map((novedad) => {
+  novedades = novedades.map(novedad => {
     if (novedad.img_id) {
       const imagen = cloudinary.image(novedad.img_id, {
         width: 100,
         height: 80,
-        crop: "pad",
+        crop: "fill",
       });
       return {
         ...novedad, //Muestra nombre, dirección y detalle.
-        imagen,
+        imagen
       };
     } else {
       return {
         ...novedad,
-        imagen: "",
-      };
+        imagen: ""
+      }
     }
   });
 
   res.render("admin/novedades", {
     layout: "admin/layout",
     usuario: req.session.nombre,
-    novedades,
+    novedades
   });
 });
 
@@ -74,10 +74,10 @@ router.post("/agregar", async (req, res, next) => {
       req.body.detalles != ""
     ) {
       await novedadesModel.insertNovedad({
-        ...req.body, //spread operatos (...) me trae los elementos nombre, dirección y detalles.
+        ...req.body, 
         img_id,
       });
-      res.redirect("/admin/novedades");
+      res.redirect("/admin/novedades")
     } else {
       res.render("admin/agregar", {
         layout: "admin/layout",
