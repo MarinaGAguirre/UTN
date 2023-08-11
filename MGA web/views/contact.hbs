@@ -1,0 +1,112 @@
+<main class="pt-0 bg-gradient-gray-white">
+  <div class="container-fluid" id="contact-hero-image">
+    <div class="row align-items-center contact-hero">
+      <div class="col-lg-4 offset-lg-2">
+        <h3>Let us know your requirements!</h3><br />
+        <p>We'll get back to you as soon as possible.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container mb-4 pt-4">
+    <!--Creamos un Container porque colocaremos adentro 2 ARTICLES -->
+    <section class="row">
+      <!--Ceamos un row con 3 columnas, 1 ocupará 12. Y 2 ocuparán 6 lugares del ancho.-->
+
+      <article class="col-12 text-center">
+        <!-- 1 columna que ocupará 12 lugares.-->
+        <h5>Or you can write to
+          <a href="mailto:info@mga.com">info@mga.com</a></h5>
+      </article>
+
+      <!-- 1 Col ocupará 6 lugares del lado derecho -->
+      <article class="col-12 col-lg-6 order-lg-1">
+        <!-- INICIO FORMULARIO GET IN TOUCH -->
+        <form action="https://formsubmit.co/maguirre.neticel@gmail.com" method="POST">
+          <label class="form-label" for="name"></label>
+          <input
+            class="form-control" id="name" name="name"
+            placeholder="Name" type="text" required/>
+
+          <label class="form-label" for="email"></label>
+          <input
+            class="form-control" id="email" name="email"
+            placeholder="e-mail" type="email" required/>
+
+          <label class="form-label" for="comments"></label>
+          <textarea
+            class="form-control" id="comments" name="comments"
+            placeholder="Project details" cols="30" rows="4" required
+          ></textarea><br>
+
+          <input
+            class="btn btn-primary btn-md rounded-5"
+            type="submit" name="Submit" value="Send" id="sumit"/>
+
+          <input
+            type="hidden" name="_next" value="http://localhost:3000/thanks"/>
+
+          <input type="hidden" name="_subject" value="Contact form!"/>
+
+        </form>
+      </article>
+      <!-- FIN FORMULARIO GET IN TOUCH -->
+
+      <!--Esta columna ocupará 6 lugares -->
+      <article class="mt-4 col-12 col-lg-6">
+        <!-- INICIO MAPA GET IN TOUCH -->
+        <div class="ratio ratio-16x9">
+          <!--Insertamos un Mapa con aspecto 16:9 (horizontal).-->
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d851.1459097604519!2d-64.18584693047242!3d-31.425595654001977!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a28fb4099b19%3A0x766e2d8074ca5bed!2sItuzaing%C3%B3%20750%2C%20X5000%20C%C3%B3rdoba!5e0!3m2!1ses-419!2sar!4v1684458622722!5m2!1ses-419!2sar"
+            width="600"
+            height="450"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </article>
+      <!-- FIN MAPA GET IN TOUCH -->
+    </section>
+  </div>
+
+  <div id="carouselExampleCaptions" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" 
+        class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="/images/contact-1.jpg" class="d-block w-100" alt="contact-1"/>
+      </div>
+      <div class="carousel-item">
+        <img src="/images/contact-2.jpg" class="d-block w-100" alt="contact-2"/>
+      </div>
+      <div class="carousel-item">
+        <img src="/images/contact-3.jpg" class="d-block w-100" alt="contact-3"/>
+      </div>
+    </div>
+
+    <button
+      class="carousel-control-prev" type="button" 
+      data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+
+    <button
+      class="carousel-control-next" type="button"
+      data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+
+  </div>
+</main>
