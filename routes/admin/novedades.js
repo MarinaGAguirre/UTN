@@ -11,7 +11,7 @@ const destroy = util.promisify(cloudinary.uploader.destroy);
 router.get("/", async function (req, res, next) {
   var novedades = await novedadesModel.getNovedades();
 
-  novedades = novedades.map(novedad => {
+  novedades = novedades.map((novedad) => {
     if (novedad.img_id) {
       const imagen = cloudinary.image(novedad.img_id, {
         width: 100,
@@ -19,21 +19,21 @@ router.get("/", async function (req, res, next) {
         crop: "fill",
       });
       return {
-        ...novedad, //Muestra nombre, dirección y detalle.
-        imagen
+        ...novedad, //Muestra nombre, dirección y detalles.
+        imagen,
       };
     } else {
       return {
         ...novedad,
-        imagen: ""
-      }
+        imagen: "",
+      };
     }
   });
 
   res.render("admin/novedades", {
     layout: "admin/layout",
     usuario: req.session.nombre,
-    novedades
+    novedades,
   });
 });
 
@@ -74,10 +74,10 @@ router.post("/agregar", async (req, res, next) => {
       req.body.detalles != ""
     ) {
       await novedadesModel.insertNovedad({
-        ...req.body, 
+        ...req.body,
         img_id,
       });
-      res.redirect("/admin/novedades")
+      res.redirect("/admin/novedades");
     } else {
       res.render("admin/agregar", {
         layout: "admin/layout",
@@ -125,19 +125,16 @@ router.post("/modificar", async (req, res, next) => {
     var obj = {
       nombre: req.body.nombre,
       direccion: req.body.direccion,
-      detalles: req.body.cuerpo,
+      detalles: req.body.detalles,
       img_id,
     };
+
     await novedadesModel.modificarNovedadById(obj, req.body.id);
     res.redirect("/admin/novedades");
+    message: "No se modifico la novedad";
   } catch (error) {
     console.log(error);
-    res.render("admin/modificar", {
-      layout: "admin/layout",
-      error: true,
-      message: "No se modifico la novedad",
-    });
-  } //cierro Catch
+  } //cierro Try
 }); // Cierro Post
 
 module.exports = router;

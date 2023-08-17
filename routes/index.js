@@ -5,7 +5,7 @@ var novedadesModel = require("../models/novedadesModel");
 var cloudinary = require("cloudinary").v2;
 
 /* GET home page. */
-router.get("/", async function (req, res, next) {
+router.get('/', async function (req, res, next) {
   novedades = await novedadesModel.getNovedades();
   novedades = novedades.splice(0,5); //Selecciona los primeros 5 elementos del array.
   novedades = novedades.map(novedad => {
@@ -26,7 +26,7 @@ router.get("/", async function (req, res, next) {
     }
   });
 
-  res.render("index", {
+  res.render("index",{
     novedades
   });
 });
@@ -65,10 +65,9 @@ router.post("/", async (req, res, next) => {
   }); //cierra var transport
 
   var info = await transporter.sendMail(obj);
+  
+  res.render("gracias");
 
-  res.render("index", {
-    message: "Mensaje enviado correctamente",
-  });
 }); //cierra petición del post
 
 module.exports = router;

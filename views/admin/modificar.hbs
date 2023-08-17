@@ -5,38 +5,25 @@
       <div class="col-6 offset-3">
         <br />
         <h3>Modificar novedades</h3>
-        <form
-          action="/admin/novedades/modificar"
-          method="post"
-          enctype="multipart/form-data"
-        >
-          <input type="hidden" value="{{novedad.id}}" name="id" />
+        <form method="post" action="/admin/novedades/modificar"
+           enctype="multipart/form-data">
+          <input type="hidden" value="{{novedad.id}}" name="id">
+
           <div class="form-group">
-            <input
-              type="text"
-              placeholder="Nombre del comercio"
-              value="{{novedad.nombre}}"
-              class="form-control"
-              name="nombre"
-            />
+            <input type="text" placeholder="Nombre del comercio"
+              value="{{novedad.nombre}}" class="form-control" name="nombre"/>
           </div>
           <br />
 
           <div class="form-group">
-            <textarea
-              placeholder="Direccion y teléfono"
-              class="form-control"
-              name="direccion"
-            >{{novedad.direccion}}</textarea>
+            <textarea placeholder="Direccion y teléfono"
+              class="form-control" name="direccion">{{novedad.direccion}}</textarea>
           </div>
           <br />
 
           <div class="form-group">
-            <textarea
-              placeholder="Detalles"
-              class="form-control"
-              name="detalles"
-            >{{novedad.detalles}}</textarea>
+            <textarea placeholder="Detalles"
+              class="form-control" name="detalles">{{novedad.detalles}}</textarea>
           </div>
           <br />
 
@@ -61,10 +48,7 @@
             </p>
           </div>
           <br />
-          <button
-            type="submit"
-            class="btn btn-lg btn-primary"
-          >MODIFICAR</button>
+          <button type="submit" class="btn btn-lg btn-primary">MODIFICAR</button>
         </form>
         <br>
         {{#if error}}

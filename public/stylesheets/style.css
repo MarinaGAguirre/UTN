@@ -20,7 +20,6 @@ background-image: linear-gradient(
   --bs-btn-hover-font-color:  var(--white-color);
 }
 
-
 .btn-primary {
 background-color: #444444;
 border-color: #444444;
@@ -46,13 +45,13 @@ border-radius:12px;
   --bs-btn-font-size: 1rem;
   }
 
-  .btn-escribir {
-    background-color:  rgb(15, 238, 71);
-    border-color:  rgb(15, 238, 71);
-    border-radius: 12px;
-    --bs-btn-hover-bg: rgb(232, 182, 87);
-    --bs-btn-hover-border-color:  rgb(232, 182, 87);
-  }
+.btn-escribir {
+  background-color:  rgb(15, 238, 71);
+  border-color:  rgb(15, 238, 71);
+  border-radius: 12px;
+  --bs-btn-hover-bg: rgb(232, 182, 87);
+  --bs-btn-hover-border-color:  rgb(232, 182, 87);
+}
 
 .carousel-caption {
 position: absolute;

@@ -1,8 +1,8 @@
-var pool = require("./bd");
+var pool = require('./bd');
 
 // Sirve para listar las Novedades:
 async function getNovedades() {
-  var query = "select * from novedades order by id";
+  var query = "select * from novedades order by id desc";
   var rows = await pool.query(query);
   return rows;
 }
@@ -49,4 +49,4 @@ module.exports = {
   insertNovedad,
   getNovedadById,
   modificarNovedadById,
-};
+}
